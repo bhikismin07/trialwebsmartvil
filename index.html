@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smartvil Share Market Training Institute | Pathshala, Assam</title>
+  <meta name="description" content="Smartvil Share Market Training Institute, Pathshala Assam. Professional stock market training with live trading, F&O, intraday, investment, mutual funds, IPO, and risk management." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1f7a1f;
+      --secondary: #0d3b0d;
+      --accent: #f4c430;
+      --dark: #0b0b0b;
+      --light: #f6f8f6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* HERO */
+    header {
+      min-height: 90vh;
+      background:
+        linear-gradient(rgba(13,59,13,0.75), rgba(13,59,13,0.85)),
+        url('trading-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header .hero-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* NAV */
+    nav {
+      background: #000;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 18px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      color: var(--secondary);
+    }
+
+    /* ABOUT */
+    #about {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    #about p {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.05rem;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    /* LIVE TRADING */
+    #trading {
+      max-width: none;
+      background:
+        linear-gradient(rgba(31,122,31,0.9), rgba(31,122,31,0.9)),
+        url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    #trading h2 {
+      font-size: 2.4rem;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    /* OFFER */
+    #offers .card {
+      text-align: center;
+      background: linear-gradient(135deg, #ffffff, #f2f7f2);
+    }
+/* PARTNER LOGOS */
+.partners {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 60px 20px;
+  margin: 80px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 0.9rem;
+  color: #555;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.partner-logos img {
+  height: 42px;
+  opacity: 0.85;
+}
+
+.partner-logos img:hover {
+  opacity: 1;
+}
+
+    /* CONTACT */
+    #contact {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      background: linear-gradient(135deg, var(--accent), #ffe26a);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    .cta:hover {
+      opacity: 0.9;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #aaa;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+
+    @media(max-width:768px){
+      header h1{font-size:2.2rem;}
+      .section-title{font-size:1.8rem;}
+    }
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 64px;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f2f4a;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #6fb33f;
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">
+        <img src="smartvil-logo.png" alt="SmartVil Share Market Training Institute Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+  <div class="hero-content">
+    <h1>Smartvil Share Market Training Institute</h1>
+    <p>
+      Professional Share Market Training with Live Trading<br>
+      Pathshala – Barpeta (Bajali), Assam – 781325<br>
+      College Chowk, Near Essar Petrol Pump, NH-31
+    </p>
+    <div style="margin-top:30px;">
+      <a href="#courses" class="cta" style="margin-right:15px;">View Courses</a>
+      <a href="#contact" class="cta" style="background:#fff;color:#000;">Contact Now</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#trading">Live Trading</a></li>
+    <li><a href="#offers">Offers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="stats" style="margin-top:-60px;">
+  <div class="grid">
+    <div class="card" style="text-align:center;"><h3>Live Market Training</h3><p>Real-time charts & guided sessions</p></div>
+    <div class="card" style="text-align:center;"><h3>Beginner to Advanced</h3><p>Structured learning path</p></div>
+    <div class="card" style="text-align:center;"><h3>Risk Management Focus</h3><p>Trade with discipline & control</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Us</h2>
+  <p>
+    Smartvil Share Market Training Institute is a professional stock market training center focused on real‑world trading skills. We emphasize live market exposure, disciplined strategies, and strong risk management — so students trade with logic, not emotion.
+  </p>
+</section>
+
+<section id="courses">
+  <h2 class="section-title">Our Training Programs</h2>
+  <div class="grid">
+    <div class="card"><h3>Intraday Trading (Equity)</h3><p>Professional intraday strategies with live chart analysis.</p></div>
+    <div class="card"><h3>Future & Option (F&O)</h3><p>Options strategies, hedging, and controlled risk setups.</p></div>
+    <div class="card"><h3>Currency Trading</h3><p>Forex market fundamentals and global movement analysis.</p></div>
+    <div class="card"><h3>Investment (S / M / L Term)</h3><p>Smart investment planning for wealth creation.</p></div>
+    <div class="card"><h3>Technical & Fundamental Analysis</h3><p>Indicators, price action, and company fundamentals.</p></div>
+    <div class="card"><h3>Mutual Fund & IPO</h3><p>Safer investment options for long‑term investors.</p></div>
+    <div class="card"><h3>Risk Management</h3><p>Capital protection and disciplined trading psychology.</p></div>
+  </div>
+</section>
+
+<section id="trading">
+  <h2>Live Trading Experience</h2>
+  <p>Real markets. Real charts. Real guidance.<br>Become a professional trader — not a gambler.</p>
+</section>
+
+<section id="offers">
+  <h2 class="section-title">Special Offer</h2>
+  <div class="card" style="max-width:500px;margin:auto;">
+    <h3>01 Month Free Training</h3>
+    <p><strong>Limited Seats Available</strong></p>
+    <p>Free DEMAT & Trading Account with</p>
+    <p><strong>Kotak Securities</strong> & <strong>Zerodha</strong></p>
+  </div>
+</section>
+<section class="partners">
+  <p class="partners-title">Official Demat & Trading Partners</p>
+  <div class="partner-logos">
+    <img src="zerodha.png" alt="Zerodha Partner">
+    <img src="kotak.png" alt="Kotak Securities Partner">
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Institute:</strong> Smartvil Share Market Training Institute</p>
+    <p><strong>Parent Organization:</strong> Smartvil Rural Development Association</p>
+    <p><strong>Address:</strong> Pathshala – Barpeta (Bajali), Assam – 781325</p>
+    <p><strong>CIN:</strong> U85300AS2021NPL021072</p>
+    <p><strong>TIN:</strong> SHSL10221B (ESIC & PF Registered)</p>
+    <p><strong>PAN:</strong> ABFCS5932E</p>
+    <p><strong>Phone:</strong> +91 84 86 99 88 55</p>
+    <p><strong>Email:</strong> smartvilservice@gmail.com</p>
+    <a class="cta" href="tel:+918486998855">Call Now</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Smartvil Share Market Training Institute</p>
+  <p>Professional Trading Education | Pathshala, Assam</p>
+</footer>
+
+</body>
+</html>
