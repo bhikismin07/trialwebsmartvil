@@ -121,6 +121,38 @@
       margin: auto;
       font-size: 1.05rem;
     }
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    max-height: 40px;
+    width: auto;
+    margin: 0;
+  }
+
+  nav {
+    margin-top: 5px;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav a {
+    display: block;
+    padding: 6px 0;
+    font-size: 16px;
+  }
+
+}
 
     /* GRID */
     .grid {
@@ -212,7 +244,12 @@
 .partner-logos img:hover {
   opacity: 1;
 }
-
+/* Hide secondary nav on mobile */
+@media (max-width: 768px) {
+  nav:not(.navbar) {
+    display: none;
+  }
+}
     /* CONTACT */
     #contact {
       background: #fff;
@@ -409,3 +446,4 @@
 
 </body>
 </html>
+
